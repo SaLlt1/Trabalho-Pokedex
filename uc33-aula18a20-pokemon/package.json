@@ -1,0 +1,32 @@
+{
+  "name": "uc33-aula18a20-pokemon",
+  "version": "1.0.0",
+  "description": "UC33 Aulas 18 a 20 - API de treinadores que consome a PokeAPI, com front-end",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc -p tsconfig.build.json",
+    "start": "node dist/server.js",
+    "pokeapi:direto": "tsx exemplos/pokeapi-direto.ts",
+    "pokeapi:simulador": "tsx exemplos/pokeapi-simulador.ts"
+  },
+  "author": "Alex Almeida",
+  "license": "MIT",
+  "dependencies": {
+    "ajv": "8.20.0",
+    "cors": "2.8.6",
+    "dotenv": "17.2.3",
+    "express": "5.2.1",
+    "mysql2": "3.23.2",
+    "swagger-ui-dist": "5.33.0",
+    "swagger-ui-express": "5.0.1"
+  },
+  "devDependencies": {
+    "@types/cors": "2.8.19",
+    "@types/express": "5.0.6",
+    "@types/node": "22.19.1",
+    "@types/swagger-ui-express": "4.1.8",
+    "tsx": "4.23.1",
+    "typescript": "5.9.3"
+  }
+}

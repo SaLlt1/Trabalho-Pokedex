@@ -1,0 +1,32 @@
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body { margin: 0; font-family: system-ui, sans-serif; background: #f1f5f9; color: #12293a; }
+header { background: #00305c; color: #fff; padding: 16px 24px; }
+header h1 { margin: 0 0 4px; font-size: 22px; }
+header p { margin: 0; color: #cfe0ec; font-size: 14px; }
+main { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; padding: 16px 24px; }
+@media (max-width: 900px) { main { grid-template-columns: 1fr; } }
+.painel { background: #fff; border: 1px solid #dce5ec; border-radius: 10px; padding: 16px; }
+h2 { margin: 0 0 12px; font-size: 18px; color: #00305c; }
+h3 { margin: 16px 0 8px; font-size: 15px; color: #00305c; }
+.linha { display: flex; gap: 8px; align-items: end; flex-wrap: wrap; }
+label { display: flex; flex-direction: column; gap: 4px; font-size: 13px; margin-bottom: 8px; }
+input { padding: 6px 8px; border: 1px solid #bfc9d4; border-radius: 6px; font: inherit; }
+button { padding: 7px 14px; border: 0; border-radius: 6px; background: #ff7900; color: #fff; font: inherit; cursor: pointer; margin-bottom: 8px; }
+button.secundario { background: #64748b; }
+button:disabled { background: #bfc9d4; cursor: default; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid #dce5ec; }
+td button { margin: 0 4px 0 0; padding: 3px 8px; font-size: 12px; }
+tr.escolhido { background: #fff4eb; }
+.aviso { padding: 8px 10px; border-radius: 6px; background: #fdecec; color: #c62828; }
+.aviso.ok { background: #eaf5ef; color: #1b7f4b; }
+.aviso.info { background: #eaf1f8; color: #004a90; }
+.detalhes { color: #c62828; margin: 0 0 8px; padding-left: 18px; font-size: 13px; }
+.cartas { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.carta { border: 1px solid #dce5ec; border-radius: 8px; padding: 8px; display: flex; flex-direction: column; align-items: center; gap: 2px; font-size: 13px; text-align: center; }
+.carta img { width: 96px; height: 96px; image-rendering: pixelated; }
+.carta span { color: #64748b; }
+.carta button { margin: 6px 0 0; padding: 3px 10px; font-size: 12px; }
+.previa { min-height: 24px; margin-bottom: 8px; font-size: 13px; color: #64748b; }
+.previa .carta { max-width: 180px; }

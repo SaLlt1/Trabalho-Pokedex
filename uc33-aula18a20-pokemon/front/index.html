@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Treinadores Pokémon · UC33</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <header>
+    <h1>Treinadores Pokémon</h1>
+    <p>Front-end da UC33 consumindo a API em <code id="endereco-api"></code></p>
+  </header>
+
+  <main>
+    <section class="painel">
+      <h2>Treinadores</h2>
+      <p id="aviso-lista" class="aviso" hidden></p>
+      <table>
+        <thead><tr><th>Id</th><th>Nome</th><th>Cidade</th><th>Time</th><th></th></tr></thead>
+        <tbody id="linhas"></tbody>
+      </table>
+
+      <h3 id="titulo-form">Novo treinador</h3>
+      <form id="cadastro">
+        <div class="linha">
+          <label>Nome <input name="nome" required></label>
+          <label>Cidade <input name="cidade" required></label>
+        </div>
+        <p id="aviso-form" class="aviso" hidden></p>
+        <ul id="detalhes" class="detalhes"></ul>
+        <div class="linha">
+          <button type="submit">Salvar</button>
+          <button id="cancelar" type="button" class="secundario">Cancelar edição</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="painel">
+      <h2 id="titulo-time">Time</h2>
+      <p id="aviso-time" class="aviso info">Escolha um treinador na lista.</p>
+      <div id="cartas" class="cartas"></div>
+
+      <form id="adicionar" hidden>
+        <h3>Pôr um Pokémon no time</h3>
+        <div class="linha">
+          <label>Pokémon <input name="pokemon" placeholder="nome ou número, ex.: pikachu" maxlength="40" required></label>
+          <button id="ver-pokemon" type="button" class="secundario">Ver</button>
+          <button type="submit">Adicionar ao time</button>
+        </div>
+        <div id="previa" class="previa"></div>
+        <p id="aviso-adicionar" class="aviso" hidden></p>
+      </form>
+    </section>
+  </main>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
