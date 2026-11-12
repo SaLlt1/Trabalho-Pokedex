@@ -1,0 +1,35 @@
+ <!doctype html>
+ <html lang="pt-BR">
+ <head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Pokédex · UC33</title>
+ <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+ <main class="pokedex">
+   <section class="tela">
+     <p id="aviso" class="aviso" hidden></p>
+     <img id="imagem" alt="" hidden>
+     <p class="identidade">
+       <span id="numero">#---</span>
+       <strong id="nome">---</strong>
+     </p>
+     <ul id="tipos" class="tipos"></ul>
+   </section>
+ 
+   <form id="busca" class="busca">
+     <input name="termo" placeholder="nome ou número, ex.: pikachu ou 25" maxlength="40" required autocomplete="off">
+     <button type="submit">Buscar</button>
+   </form>
+ 
+   <div class="navegacao">
+     <button id="anterior" type="button">◀ Anterior</button>
+     <button id="aleatorio" type="button">🎲 Aleatório</button>
+     <button id="proximo" type="button">Próximo ▶</button>
+   </div>
+ </main>
+ 
+ <script type="module" src="app.js"></script>
+ </body>
+ </html>
