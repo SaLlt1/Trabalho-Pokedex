@@ -1,0 +1,40 @@
+ * { box-sizing: border-box; }
+ [hidden] { display: none !important; }
+ body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #1e293b; font-family: system-ui, sans-serif; }
+ .pokedex { width: 340px; background: #dc2626; border-radius: 18px; padding: 22px; box-shadow: 0 12px 30px rgba(0, 0, 0, .4); }
+ .tela { background: #f8fafc; border: 8px solid #334155; border-radius: 10px; min-height: 260px; padding: 12px; text-align: center; }
+ .tela img { width: 160px; height: 160px; image-rendering: pixelated; }
+ .identidade { margin: 4px 0; font-size: 20px; }
+ #numero { color: #64748b; margin-right: 6px; }
+ #nome { text-transform: capitalize; color: #0f172a; }
+ .tipos { list-style: none; display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; padding: 0; margin: 8px 0 0; }
+ .tipo { padding: 3px 10px; border-radius: 999px; color: #fff; font-size: 13px; background: #64748b; }
+ 
+ /* Desafio 2: cores para os 18 tipos */
+ .tipo-normal   { background: #78716c; }
+ .tipo-fire     { background: #ea580c; }
+ .tipo-water    { background: #2563eb; }
+ .tipo-electric { background: #ca8a04; }
+ .tipo-grass    { background: #16a34a; }
+ .tipo-ice      { background: #0891b2; }
+ .tipo-fighting { background: #b91c1c; }
+ .tipo-poison   { background: #9333ea; }
+ .tipo-ground   { background: #a16207; }
+ .tipo-flying   { background: #6366f1; }
+ .tipo-psychic  { background: #db2777; }
+ .tipo-bug      { background: #65a30d; }
+ .tipo-rock     { background: #57534e; }
+ .tipo-ghost    { background: #6d28d9; }
+ .tipo-dragon   { background: #4338ca; }
+ .tipo-dark     { background: #1f2937; }
+ .tipo-steel    { background: #475569; }
+ .tipo-fairy    { background: #ec4899; }
+ 
+ .aviso { margin: 0 0 8px; padding: 6px; border-radius: 6px; font-size: 14px; background: #fee2e2; color: #b91c1c; }
+ .aviso.info { background: #e0f2fe; color: #075985; }
+ .busca { display: flex; gap: 6px; margin: 16px 0 10px; }
+ .busca input { flex: 1; min-width: 0; padding: 8px; border-radius: 6px; border: 0; font: inherit; }
+ button { padding: 8px 12px; border: 0; border-radius: 6px; background: #0f172a; color: #fff; font: inherit; cursor: pointer; }
+ button:disabled { background: #94a3b8; cursor: default; }
+ .navegacao { display: flex; justify-content: space-between; gap: 6px; }
+ .navegacao button { padding: 8px 10px; font-size: 14px; }
